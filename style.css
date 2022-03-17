@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+a:hover,
+a:active {
+  color: #0b7285;
+}
+
+.main-wapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* Header */
+
+header {
+  height: 100vh;
+  position: relative;
+}
+
+.header-wapper {
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+
+  font-size: 18px;
+  text-align: center;
+  overflow: scroll;
+  border-right: 1px solid #333;
+}
+
+.header-wapper h1 {
+  font-size: 32px;
+  letter-spacing: -0.5px;
+  padding: 24px 16px;
+  border-bottom: 2px solid #333;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+}
+
+.nav-ul li {
+  padding: 16px 0;
+  border-bottom: 1px solid #333;
+}
+
+/* main section */
+
+main {
+  width: 60%;
+  margin-top: 50px;
+  padding-left: 100px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin-bottom: 15px;
+}
+
+.article {
+  margin: 10px 0 20px 0;
+}
+
+.article ul {
+  padding-left: 50px;
+}
+
+.article li {
+  margin: 10px 0;
+}
+
+code {
+  display: block;
+  padding: 20px 10px;
+  margin: 15px 0 15px 15px;
+  background-color: rgb(238, 238, 238);
+  width: 100%;
+  border-radius: 9px;
+}
+
+a:last-child {
+  text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+  .main-wapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  header {
+    height: 200px;
+    border-bottom: 2px solid #333;
+  }
+
+  .header-wapper {
+    position: absolute;
+    width: 100%;
+  }
+
+  .header-wapper h1 {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+  }
+  .nav-ul li {
+    padding: 10px 0;
+  }
+
+  nav {
+    z-index: -1;
+  }
+  main {
+    margin: 35px auto;
+    padding-left: 0;
+  }
+}
